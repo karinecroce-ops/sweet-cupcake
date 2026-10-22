@@ -67,7 +67,7 @@ nav a:hover {
     overflow: hidden;
     background:
     radial-gradient( circle at 82% 45%, #ead8f2 0 17%,  transparent 17.2%),
-    linear-gradient( 100deg, #ead8f1 65%, #f7e9f1)
+    linear-gradient( 100deg, #ead8f1 65%, #f7e9f1);
 }
 
 .hero-text {
@@ -175,6 +175,25 @@ nav a:hover {
     border: 1px solid #f0dbe4;
     min-height: 265px;
 }
+.card.popular {
+    border: 2px solid #e76694;
+    position: relative;
+    margin-top: 0px;
+}
+
+.destaque {
+    position: absolute;
+    top: -15px;
+    left: calc(45% - 10px);
+    transform: translateX(-50%);
+    white-space: nowrap;
+    padding: 6px 14px;
+    border-radius: 18px;
+    background: #e76694;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
 .card.pink {
     background: #f8d8e5;
 }
@@ -190,9 +209,10 @@ nav a:hover {
 .card img {
     width: 125px;
     height: 105px;
-    object-fit: contain;
+    object-fit: cover;
     margin: 0 auto 2px;
     display: block;
+    border-radius: 12px;
 }
 .card h3 {
     font-family: Pacifico, cursive;
@@ -387,5 +407,4 @@ footer {
     .benefits {
         grid-template-columns: 1fr;
     }
-
 }
